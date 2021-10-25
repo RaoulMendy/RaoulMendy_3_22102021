@@ -1,8 +1,11 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAIA,OAAO,CAAC,6FAAI;AAEZ,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,EAAE;EACX,MAAM,EAAE,KAAK;EACb,WAAW,EAAE,oBAAoB;EACjC,UAAU,EAAE,UAAU;CACvB",
     "sources": [
-        "main.scss"
+        "main.scss",
+        "utils/_functions.scss",
+        "utils/_mixins.scss",
+        "utils/_variables.scss"
     ],
     "names": [],
     "file": "main.css"
