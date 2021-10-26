@@ -7,4 +7,25 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #353535;
+  color: #fff;
+}
+
+footer .footer__title {
+  font-family: 'Shrikhand';
+}
 /*# sourceMappingURL=main.css.map */
