@@ -1,13 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+@import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/variables";
+@import "./base/base";
+@import "./components/components";
+@import "./layout/header";
+@import "./layout/footer";
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
+/*ACCUEIL*/
+.city {
 
-body {
-  margin: 0;
-  padding: 0%;
-  height: 100vh;
-  font-family: 'Roboto', sans-serif;
-  box-sizing: border-box;
+    @include flex-center;
+    background-color: $grey2;
+   
+    &__container {
+        @include flex-center;
+
+        p {
+            margin-left: 15px;
+        }  
+    }
+}
+
+.explore {
+    @include padding-layout;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 290px;
+    background-color: $grey1;
+}
+
+.functioning {
+    @include padding-layout; 
+}
+
+.restaurants {
+    @include padding-layout;
+    background-color: $grey1;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 174px 77px;
+    width: 100%;
+    height: 251px;
+    border-radius: 15px 15px;
+    margin-block: 20px;
+    background: $color-white;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    &__heading {
+    display: grid;
+    }
+}
+
+.step {
+    display: flex;
 }

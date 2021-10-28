@@ -1,10 +1,153 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+* {
   margin: 0;
   padding: 0%;
-  height: 100vh;
-  font-family: 'Roboto', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+h4 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: 900;
+  font-size: 1.1em;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  font-weight: unset;
+}
+
+button {
+  -webkit-box-shadow: 0px 10px 10px #d2d2d2;
+          box-shadow: 0px 10px 10px #d2d2d2;
+  height: 50px;
+  width: 218px;
+  border: none;
+  border-radius: 25px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #FF79DA), color-stop(90%, #9356DC));
+  background: linear-gradient(#FF79DA 10%, #9356DC 90%);
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px;
+}
+
+footer {
+  padding: 20px;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+  background-color: #353535;
+  color: white;
+}
+
+/*ACCUEIL*/
+.city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px;
+  background-color: #d2d2d2;
+}
+
+.city__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 16px;
+}
+
+.city__container p {
+  margin-left: 15px;
+}
+
+.explore {
+  padding: 20px;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 290px;
+  background-color: #f2f2f2;
+}
+
+.functioning {
+  padding: 20px;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+}
+
+.restaurants {
+  padding: 20px;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+  background-color: #f2f2f2;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 174px 77px;
+      grid-template-rows: 174px 77px;
+  width: 100%;
+  height: 251px;
+  border-radius: 15px 15px;
+  margin-block: 20px;
+  background: white;
+}
+
+.card__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card__heading {
+  display: -ms-grid;
+  display: grid;
 }
 /*# sourceMappingURL=main.css.map */
