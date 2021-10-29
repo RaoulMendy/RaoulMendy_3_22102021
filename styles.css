@@ -145,14 +145,38 @@ button {
   border-radius: 10px 10px 0px 0px;
 }
 
-.card__heading {
-  display: -ms-grid;
-  display: grid;
-}
-
 .step {
+  padding: 20px;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 64px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 15px 15px;
+  margin-block: 20px;
+}
+
+.step__number {
+  position: relative;
+  right: 30px;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  font-size: large;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+}
+
+.step p {
+  margin-left: 15px;
 }
 /*# sourceMappingURL=styles.css.map */

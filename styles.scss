@@ -144,11 +144,32 @@ button {
         border-radius: 10px 10px 0px 0px;
     }
 
-    &__heading {
-    display: grid;
-    }
 }
 
 .step {
+    @include padding-layout;
     display: flex;
+    height: 64px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $grey1;
+    border-radius: 15px 15px;
+    margin-block: 20px;
+
+    &__number {
+        position: relative;
+        right: 30px;
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        font-size: large;
+        background-color: $color-primary;
+        color: $color-white;
+        border-radius: 50%;
+    }
+
+    p {
+        margin-left: 15px;
+    } 
+
 }
