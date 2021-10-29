@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+@mixin flex-center {
+    display: flex; 
+    justify-content: center; 
+    padding: 16px;
+    
+}
+
+@mixin padding-layout {
+    padding: 20px;
+    padding-block-end: 20px;
+    
+}
+
+@mixin font-title {
+    font-family: 'Shrikhand', cursive;
+    font-weight: 900;
+}
+
+@mixin button {
+    
+}
+
+@mixin box-shadow {
+    box-shadow: 0px 5px 5px $grey2;
+}
+
+$color-primary:#9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-white: white;
+$grey1: #f2f2f2;
+$grey2:#d2d2d2;
+$grey3: #353535;
+$gradient: linear-gradient(#FF79DA 10%, #9356DC 90%);
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  h1 { 
+    @include font-title;
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size:1.5em;
+    font-weight: bolder;
+  }
+
+  h4 {
+    @include font-title;
+    font-size: 1.1em;
+
+  }
+  
+  a {
+    text-decoration: none;
+    color: unset;
+    font-weight: unset;
+  }
+  
+  
+
+header {
+    @include flex-center
+ }
+
+ footer {
+    @include padding-layout;
+    background-color: $grey3;
+    color: $color-white;
+   }
+
+   .city {
+
+    @include flex-center;
+    background-color: $grey2;
+   
+    &__container {
+        @include flex-center;
+
+        p {
+            margin-left: 15px;
+        }  
+    }
+}
+
+.explore {
+    @include padding-layout;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 290px;
+    background-color: $grey1;
+}
+
+.functioning {
+    @include padding-layout; 
+}
+
+.restaurants {
+    @include padding-layout;
+    background-color: $grey1;
+}
+
+button {
+    @include box-shadow;
+    height: 50px;
+    width: 218px;
+    border: none;
+    border-radius: 25px;
+    background: $gradient;
+    color: $color-white;
+}
+
+
+.card {
+    display: grid;
+    grid-template-rows: 174px 77px;
+    width: 100%;
+    height: 251px;
+    border-radius: 15px 15px;
+    margin-block: 20px;
+    background: $color-white;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    &__heading {
+    display: grid;
+    }
+}
+
+.step {
+    display: flex;
+}
