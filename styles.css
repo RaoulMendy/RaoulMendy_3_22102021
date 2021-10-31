@@ -36,6 +36,10 @@ a {
   font-weight: unset;
 }
 
+.loader {
+  background-color: "#f3f3f3";
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,7 +57,7 @@ footer {
   padding: 20px;
   -webkit-padding-after: 20px;
           padding-block-end: 20px;
-  height: 200px;
+  height: 156px;
   background-color: #353535;
   color: white;
 }
@@ -143,6 +147,7 @@ button {
 }
 
 .card {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 174px 77px;
@@ -159,6 +164,16 @@ button {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px 10px 0px 0px;
+}
+
+.card__sticker {
+  position: absolute;
+  background-color: aquamarine;
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  width: 80px;
+  padding: 8px;
 }
 
 .step {
@@ -197,7 +212,17 @@ button {
   border-radius: 50%;
 }
 
-/*.test {
-      background-color: blue;
-  }*/
+.step:hover {
+  background: rgba(146, 86, 220, 0.2);
+}
+
+.card__heading {
+  padding: 20px;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+}
 /*# sourceMappingURL=styles.css.map */

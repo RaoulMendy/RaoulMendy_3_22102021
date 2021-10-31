@@ -3,13 +3,17 @@
 @import "./utils/mixins";
 @import "./base/base";
 
+.loader {
+background-color: "#f3f3f3"
+}
+
 header {
     @include flex-center
  }
 
  footer {
     @include padding-layout;
-    height: 200px;
+    height: 156px;
     background-color: $grey3;
     color: $color-white;
 
@@ -60,6 +64,7 @@ button {
 }
 
 .card {
+    position: relative;
     display: grid;
     grid-template-rows: 174px 77px;
     height: 251px;
@@ -72,6 +77,16 @@ button {
         height: 100%;
         object-fit: cover;
         border-radius: 10px 10px 0px 0px;
+    }
+
+    &__sticker {
+        position: absolute;
+        background-color: aquamarine;
+        color: $color-white;
+        font-weight: bold;
+        height: 30px;
+        width:80px;
+        padding: 8px;
     }
 }
 
@@ -101,8 +116,14 @@ button {
         color: $color-white;
         border-radius: 50%;
     }
+    &:hover {
+        background: $alpha-primary;
+    }
 }
 
-  /*.test {
-      background-color: blue;
-  }*/
+.card__heading {
+    @include padding-layout;
+    display: grid;
+    grid-template-columns: 80% 20%;
+   
+}

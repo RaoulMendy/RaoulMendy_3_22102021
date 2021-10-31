@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div class="loader"></div>
     <header class="header">
         <h1 class="header__logo">ohmyfood</h1>
     </header>
@@ -24,7 +25,7 @@
         <section class="explore">
             <h2 class="explore__title">Réserver le menu qui vous convient</h2>
             <p class="explore__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <button onclick="" class="explore__btn">Explorer nos restaurants</button>
+            <button href="#restaurants" onclick="" class="explore__btn">Explorer nos restaurants</button>
         </section>
 
         <section class="functioning">
@@ -49,40 +50,47 @@
         </section>
 
         <section class="restaurants">
-            <h2 class="restaurants__title">Restaurants</h2>
+            <h2 class="restaurants__title" id="#restaurants">Restaurants</h2>
             <div class="maintray">
                 <a href="./pages/la_palette_du_gout.html">
+                    <div class="card__sticker">Nouveau</div>
                     <div class="card">
-                        <img class="card__img" src="images/restaurants/palette_du_gout.jpg#" alt="palette_du_gout.jpg">
+                        <img class="card__img" src="images/restaurants/palette_du_gout.jpg" alt="palette_du_gout.jpg">
                         <div class="card__heading">
-                            <h3 class="card__title">La palette du goût</h3>
-                            <p class="card__subtitle">Ménilmontant</p>
+                            <div class="container">
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div class="heart">Coeur</div>
                         </div>
-                        <div class="card__fav"></div>
-                        <div class="card__sticker"></div>
+                        <div class="card__sticker">Nouveau</div>
                     </div>
                 </a>
                 <a href="./pages/la_note_enchantée.html">
+                    <div class="card__sticker">Nouveau</div>
                     <div class="card">
                         <img class="card__img" src="images/restaurants/la_note_enchantée.jpg"
                             alt="la_note_enchantée.jpg">
                         <div class="card__heading">
-                            <h3 class="card__title">La note enchantée</h3>
-                            <p class="card__subtitle">Charonne</p>
+                            <div class="container">
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="heart">Coeur</div>
                         </div>
-                        <div class="card__fav"></div>
-                        <div class="card__sticker"></div>
+                        <div class="card__sticker">Nouveau</div>
                     </div>
                 </a>
                 <a href="./pages/a_la_française.html">
                     <div class="card">
                         <img class="card__img" src="images/restaurants/a_la_francaise.jpg" alt="a_la_francaise.jpg">
                         <div class="card__heading">
-                            <h3 class="card__title">À la française</h3>
-                            <p class="card__subtitle">Cité Rouge</p>
+                            <div class="container">
+                                <h3>À la française</h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="heart">Coeur</div>
                         </div>
-                        <div class="card__fav"></div>
-                        <div class="card__sticker"></div>
                     </div>
                 </a>
                 <a href="./pages/le_delice_des_sens.html">
@@ -90,18 +98,16 @@
                         <img class="card__img" src="images/restaurants/le_delice_des_sens.jpg"
                             alt="le_delice_des_sens.jpg">
                         <div class="card__heading">
-                            <h3 class="card__title">Le délice des sens</h3>
-                            <p class="card__subtitle">Folie-Méricourt</p>
+                            <div class="container">
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="heart">Coeur</div>
                         </div>
-                        <div class="card__fav"></div>
-                        <div class="card__sticker"></div>
                     </div>
                 </a>
             </div>
         </section>
-        <!--<section class="test">
-            <h1>couleur de fond va changer</h1> 
-        </section>-->
     </main>
     <footer class="footer">
         <h4 class="footer__title">ohmyfood</h4>
