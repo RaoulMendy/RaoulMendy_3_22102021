@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg4516"
+   sodipodi:docname="Heartgradient.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata4522">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4520">
+    <linearGradient
+       inkscape:collect="always"
+       id="Gradient">
+      <stop
+         style="stop-color:#ff79da;stop-opacity:1"
+         offset="0"
+         id="stop4540" />
+      <stop
+         style="stop-color:#9356dc;stop-opacity:1"
+         offset="1"
+         id="stop4542" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#Gradient"
+       id="linearGradient4546"
+       x1="11.856421"
+       y1="13.808321"
+       x2="11.983304"
+       y2="1.0265124"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview4518"
+     showgrid="false"
+     inkscape:zoom="15.762589"
+     inkscape:cx="9.954113"
+     inkscape:cy="18.10019"
+     inkscape:window-x="-8"
+     inkscape:window-y="148"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4516" />
+  <path
+     d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"
+     id="path4514"
+     style="fill:url(#linearGradient4546);fill-opacity:1" />
+</svg>

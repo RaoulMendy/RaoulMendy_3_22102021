@@ -255,26 +255,26 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .heart__coeur1 {
-  font-size: 1.5em;
-  font-weight: lighter;
-  color: blue;
-  background: transparent;
-  z-index: 1;
+  position: absolute;
+  opacity: 1;
 }
 
 .heart__coeur1:hover {
-  color: green;
+  opacity: 0;
 }
 
 .heart__coeur2 {
   position: absolute;
-  background: transparent;
-  font-size: 1.5em;
-  font-weight: bolder;
-  color: red;
+  opacity: 0;
+}
+
+.heart__coeur2:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */

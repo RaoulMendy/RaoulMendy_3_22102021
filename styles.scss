@@ -149,27 +149,25 @@ button {
 .heart {
     position: relative;
     display: flex;
-    margin: auto;
+    justify-content: space-evenly;
     
     &__coeur1 {
-        font-size: 1.5em;
-        font-weight: lighter;
-        color: blue;
-        background: transparent;
-        z-index: 1;
-        
-        &:hover {
-            color: green;
+       position: absolute;
+       opacity: 1;
+
+       &:hover {
+        opacity: 0;
         }
+     
     }
 
     &__coeur2 {
-    
         position: absolute;
-        background: transparent;
-        font-size: 1.5em;
-        font-weight: bolder;
-        color: red; 
+        opacity: 0;
+  
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
