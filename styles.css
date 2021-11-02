@@ -27,7 +27,7 @@ h2 {
 h4 {
   font-family: 'Shrikhand', cursive;
   font-weight: 900;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 a {
@@ -50,14 +50,22 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 16px;
+  padding: 15px;
+  position: relative;
+}
+
+header__back {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  right: 150px;
+  left: 100px;
 }
 
 footer {
   padding: 20px;
   -webkit-padding-after: 20px;
           padding-block-end: 20px;
-  height: 156px;
   background-color: #353535;
   color: white;
 }
@@ -66,6 +74,20 @@ footer span {
   height: 15px;
   width: 15px;
   margin-right: 15px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 120px;
 }
 
 .city {
@@ -78,7 +100,7 @@ footer span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 16px;
+  padding: 15px;
   background-color: #d2d2d2;
   height: 50px;
 }
@@ -93,7 +115,7 @@ footer span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 16px;
+  padding: 15px;
 }
 
 .city__container span {
@@ -168,12 +190,24 @@ button {
 
 .card__sticker {
   position: absolute;
-  background-color: aquamarine;
-  color: white;
+  right: 14px;
+  top: 15px;
+  background-color: #99E2D0;
+  color: #01011f;
   font-weight: bold;
   height: 30px;
   width: 80px;
   padding: 8px;
+}
+
+.card__heading {
+  padding: 20px;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
 }
 
 .step {
@@ -216,13 +250,31 @@ button {
   background: rgba(146, 86, 220, 0.2);
 }
 
-.card__heading {
-  padding: 20px;
-  -webkit-padding-after: 20px;
-          padding-block-end: 20px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 80% 20%;
-      grid-template-columns: 80% 20%;
+.heart {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.heart__coeur1 {
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: blue;
+  background: transparent;
+  z-index: 1;
+}
+
+.heart__coeur1:hover {
+  color: green;
+}
+
+.heart__coeur2 {
+  position: absolute;
+  background: transparent;
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: red;
 }
 /*# sourceMappingURL=styles.css.map */
