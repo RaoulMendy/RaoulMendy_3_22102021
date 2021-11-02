@@ -260,21 +260,21 @@ button {
           justify-content: space-evenly;
 }
 
-.heart__coeur1 {
+.heart__one {
   position: absolute;
   opacity: 1;
 }
 
-.heart__coeur1:hover {
+.heart__one:hover {
   opacity: 0;
 }
 
-.heart__coeur2 {
+.heart__two {
   position: absolute;
   opacity: 0;
 }
 
-.heart__coeur2:hover {
+.heart__two:hover {
   opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */
