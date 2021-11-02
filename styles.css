@@ -54,12 +54,10 @@ header {
   position: relative;
 }
 
-header__back {
+header a {
   position: absolute;
-  background-color: black;
-  top: 0;
-  right: 150px;
-  left: 100px;
+  left: 15px;
+  font-size: x-large;
 }
 
 footer {
@@ -258,11 +256,13 @@ button {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .heart__one {
   position: absolute;
-  opacity: 1;
 }
 
 .heart__one:hover {
@@ -276,5 +276,32 @@ button {
 
 .heart__two:hover {
   opacity: 1;
+}
+
+/*PAGE*/
+.caption {
+  height: 260px;
+}
+
+.caption__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  padding: 20px;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+}
+
+.order {
+  text-align: center;
+  margin-block: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
