@@ -191,7 +191,7 @@ button {
 
 .order {
     text-align: center;
-    margin-block: 20px;
+    padding-block-end: 80px;
 }
 
 .dish {
@@ -208,4 +208,14 @@ border-radius: 15px 15px;
     justify-content: flex-end;
     align-items: flex-end;
 }
+}
+
+.grid-container {
+    display: grid;
+    margin-block: 20px;
+    padding: 14px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(4);
+    row-gap: 14px;
+
 }

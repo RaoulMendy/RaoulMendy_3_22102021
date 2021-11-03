@@ -306,7 +306,8 @@ button {
 
 .order {
   text-align: center;
-  margin-block: 20px;
+  -webkit-padding-after: 80px;
+          padding-block-end: 80px;
 }
 
 .dish {
@@ -332,5 +333,17 @@ button {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  margin-block: 20px;
+  padding: 14px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr ()[4];
+      grid-template-rows: 1fr repeat(4);
+  row-gap: 14px;
 }
 /*# sourceMappingURL=styles.css.map */
