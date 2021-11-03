@@ -114,7 +114,7 @@ button {
 .step {
     @include padding-layout;
     display: flex;
-    height: 64px;
+    height: 68px;
     justify-content: flex-start;
     align-items: center;
     background-color: $grey1;
@@ -168,6 +168,10 @@ button {
 
 /*PAGE*/
 
+.bg-menu {
+    background-color: $grey1;
+}
+
 .caption {
 
     height: 260px;
@@ -178,11 +182,30 @@ button {
 }
 
 .menu {
+
+    &__title {
     @include padding-layout;
     @include grid-heart;
+    }
 }
 
 .order {
     text-align: center;
     margin-block: 20px;
+}
+
+.dish {
+
+@include padding-layout;
+@include grid-heart;
+height: 68px;
+background-color: $color-white;
+border-radius: 15px 15px;
+
+
+&__price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 }
