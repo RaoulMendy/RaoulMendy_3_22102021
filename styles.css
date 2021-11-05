@@ -310,40 +310,72 @@ button {
           padding-block-end: 80px;
 }
 
-.dish {
-  padding: 20px;
-  -webkit-padding-after: 20px;
-          padding-block-end: 20px;
+/******************************************************/
+.grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 80% 20%;
-      grid-template-columns: 80% 20%;
-  height: 68px;
-  background-color: white;
-  border-radius: 15px 15px;
+  margin: 14px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr ()[4];
+      grid-template-rows: 1fr repeat(4);
+  row-gap: 14px;
 }
 
-.dish__price {
+.meal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  height: 68px;
+}
+
+.meal__heading {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20% 68px;
+      grid-template-columns: 80% 20% 68px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+}
+
+.meal__heading:hover {
+  -ms-grid-columns: 4fr 1fr 68px;
+      grid-template-columns: 4fr 1fr 68px;
+}
+
+.meal__heading__checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  color: white;
+  width: 68px;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.meal__heading__details {
+  padding: 14px;
+}
+
+.meal__heading__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.grid-container {
-  display: -ms-grid;
-  display: grid;
-  margin-block: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 14px;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr ()[4];
-      grid-template-rows: 1fr repeat(4);
-  row-gap: 14px;
 }
 /*# sourceMappingURL=styles.css.map */
