@@ -253,12 +253,14 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 14px;
+  height: 68px;
 }
 
 .heart__one {
@@ -339,6 +341,7 @@ button {
   overflow: hidden;
   cursor: pointer;
   width: 100%;
+  height: 68px;
 }
 
 .meal__heading:hover {
@@ -364,6 +367,14 @@ button {
 
 .meal__heading__details {
   padding: 14px;
+  height: 68px;
+  overflow: hidden;
+}
+
+.meal__heading__details p, .meal__heading__details h3 {
+  text-overflow: ellipsis "...";
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .meal__heading__price {
@@ -377,5 +388,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding: 14px;
+  height: 68px;
 }
 /*# sourceMappingURL=styles.css.map */
