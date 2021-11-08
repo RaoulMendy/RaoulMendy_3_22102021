@@ -14,7 +14,7 @@ header {
     a {
         position: absolute;
         left: 15px;
-        font-size: x-large
+        font-size: 1.2em
         }
  }
 
@@ -105,9 +105,7 @@ button {
 
     &__heading {
     @include padding-layout;
-    @include grid-heart
-   
-   
+    @include grid-heart;
     }
 }
 
@@ -143,12 +141,7 @@ button {
 }
 
 .heart {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 14px;
-    height: 68px;
+    @include flex-end;
     
     &__one {
        position: absolute;
@@ -168,11 +161,7 @@ button {
     }
 }
 
-/*PAGE*/
-
-.bg-menu {
-    background-color: $grey1;
-}
+/**********************************PAGE************************/
 
 .caption {
 
@@ -183,26 +172,20 @@ button {
     }
 }
 
+/******************************************************/
 .menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(13);
+    row-gap: 14px;
+    margin-block-end: 40px;
+    padding: 14px;
 
     &__title {
-    @include padding-layout;
-    @include grid-heart;
+        display: grid;
+        grid-template-columns: 80% 20%;
+       
     }
-}
-
-.order {
-    text-align: center;
-    padding-block-end: 80px;
-}
-
-/******************************************************/
-.grid-container {
-    display: grid;
-    margin: 14px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr repeat(4);
-    row-gap: 14px;
 
 }
 .meal {
@@ -214,45 +197,44 @@ button {
    
     &__heading {
         display: grid;
-        grid-template-columns: 80% 20% 68px;
+        grid-template-columns: 4fr 1fr 0px;
         overflow: hidden;
         cursor: pointer;
         width: 100%;
-        height: 68px;
+   
 
         &:hover {
             grid-template-columns: 4fr 1fr 68px;
+            transition-duration: 600ms;
         }
 
         &__checked {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #99E2D0;
+            @include flex-center;
+            background-color: $color-tertiary;
             color: white;
-            width: 68px;
             border-radius: 0px 15px 15px 0px;
         }
 
         &__details {
             padding: 14px;
-            height: 68px;
             overflow: hidden;
             
             p, h3 {
             text-overflow: ellipsis "...";
             overflow: hidden;
             white-space: nowrap;
-
             }
    
         }
+
         &__price {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding: 14px;
-            height: 68px;
+            @include flex-end;
         }
     }
+}
+
+.order {
+    text-align: center;
+    height: 150px;
+    margin-block-end: 40px;
 }

@@ -12,14 +12,33 @@ body {
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
   }
   
+  .blocpage {
+    background-color: $grey1;
+  }
+
+  p {
+    font-size: 1.0em;
+  }
+
   h1 { 
     @include font-title;
-    font-size: 2.5em;
+    font-size: 2.0em;
   }
   
+
   h2 {
-    font-size:1.5em;
-    font-weight: bolder;
+    font-size: 1.4em;
+    margin-block-start: 40px;
+    
+  }
+  .menu h2 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+
+  h3 {
+    font-size: 1.0em;
+  
   }
 
   h4 {
