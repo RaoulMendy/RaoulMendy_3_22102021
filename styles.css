@@ -280,19 +280,27 @@ button {
 
 .heart__one {
   position: absolute;
+  -webkit-transition: ease-in-out 600ms;
+  transition: ease-in-out 600ms;
 }
 
 .heart__one:hover {
   opacity: 0;
+  -webkit-transition: ease-in-out 600ms;
+  transition: ease-in-out 600ms;
 }
 
 .heart__two {
   position: absolute;
   opacity: 0;
+  -webkit-transition: ease-in-out 600ms;
+  transition: ease-in-out 600ms;
 }
 
 .heart__two:hover {
   opacity: 1;
+  -webkit-transition: ease-in-out 600ms;
+  transition: ease-in-out 600ms;
 }
 
 /**********************************PAGE************************/
@@ -349,13 +357,33 @@ button {
   overflow: hidden;
   cursor: pointer;
   width: 100%;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+.meal__heading span.fas {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 600ms ease-in-out;
+  transition: -webkit-transform 600ms ease-in-out;
+  transition: transform 600ms ease-in-out;
+  transition: transform 600ms ease-in-out, -webkit-transform 600ms ease-in-out;
 }
 
 .meal__heading:hover {
   -ms-grid-columns: 4fr 1fr 68px;
       grid-template-columns: 4fr 1fr 68px;
-  -webkit-transition-duration: 600ms;
-          transition-duration: 600ms;
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+.meal__heading:hover span.fas {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: -webkit-transform 600ms ease-in-out;
+  transition: -webkit-transform 600ms ease-in-out;
+  transition: transform 600ms ease-in-out;
+  transition: transform 600ms ease-in-out, -webkit-transform 600ms ease-in-out;
 }
 
 .meal__heading__checked {

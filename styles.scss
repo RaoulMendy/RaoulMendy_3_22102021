@@ -145,18 +145,22 @@ button {
     
     &__one {
        position: absolute;
+       transition: ease-in-out 600ms;
 
        &:hover {
         opacity: 0;
+        transition: ease-in-out 600ms;
         }
     }
 
     &__two {
         position: absolute;
         opacity: 0;
+        transition: ease-in-out 600ms;
   
         &:hover {
             opacity: 1;
+            transition: ease-in-out 600ms;
         }
     }
 }
@@ -208,11 +212,22 @@ button {
         overflow: hidden;
         cursor: pointer;
         width: 100%;
-   
+        transition: all 600ms ease-in-out;
+
+        span.fas {
+            transform: rotate(0deg);
+            transition: transform 600ms ease-in-out;
+        }
+        
 
         &:hover {
             grid-template-columns: 4fr 1fr 68px;
-            transition-duration: 600ms;
+            transition: all 600ms ease-in-out;
+
+            span.fas {
+                transform: rotate(-360deg);
+                transition: transform 600ms ease-in-out;
+            }
         }
 
         &__checked {
