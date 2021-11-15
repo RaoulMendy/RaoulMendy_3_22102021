@@ -212,21 +212,21 @@ button {
         overflow: hidden;
         cursor: pointer;
         width: 100%;
-        transition: all 600ms ease-in-out;
+        transition: all 400ms ease-in-out;
 
         span.fas {
             transform: rotate(0deg);
-            transition: transform 600ms ease-in-out;
+            transition: transform 400ms ease-in-out;
         }
         
 
         &:hover {
             grid-template-columns: 4fr 1fr 68px;
-            transition: all 600ms ease-in-out;
+            transition: all 400ms ease-in-out;
 
             span.fas {
                 transform: rotate(-360deg);
-                transition: transform 600ms ease-in-out;
+                transition: transform 400ms ease-in-out;
             }
         }
 
@@ -259,4 +259,10 @@ button {
     text-align: center;
     height: 150px;
     
+}
+
+.mintbar {
+    width: 50px;
+    height: 5px;
+    background-color: $color-tertiary;
 }
