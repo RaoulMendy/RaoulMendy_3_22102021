@@ -4,7 +4,8 @@
   "description": "ohmyfood",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prefix": "postcss styles.css --use autoprefixer -d prefixed"
+  
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/RaoulMendy/RaoulMendy_3_22102021/issues"
   },
