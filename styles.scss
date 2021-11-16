@@ -71,6 +71,7 @@ header {
 .restaurants {
     @include padding-layout;
     background-color: $grey1;
+    
 }
 
 button {
@@ -213,6 +214,7 @@ button {
     background-color: white;
     border-radius: 15px 15px 15px 15px;
     height: 68px;
+    animation: anim1 1000ms ease-out 0s 1 normal forwards;
 
    
     &__heading {
@@ -251,7 +253,7 @@ button {
             overflow: hidden;
             
             p, h3 {
-            text-overflow: ellipsis "...";
+            text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
             }
@@ -275,3 +277,38 @@ button {
     height: 5px;
     background-color: $color-tertiary;
 }
+
+
+@keyframes anim1 {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 0;
+      transform: translateY(24px);
+    }
+  
+    20% {
+      opacity: 0;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(12px);
+    }
+  
+    60% {
+      animation-timing-function: ease-in;
+      transform: translateY(6px);
+    }
+  
+    80% {
+      animation-timing-function: ease-in;
+      transform: translateY(4px);
+      opacity: 1;
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
