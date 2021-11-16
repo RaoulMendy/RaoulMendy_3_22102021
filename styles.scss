@@ -286,10 +286,6 @@ button {
       transform: translateY(24px);
     }
   
-    20% {
-      opacity: 0;
-    }
-  
     40% {
       animation-timing-function: ease-in;
       transform: translateY(12px);
@@ -308,7 +304,6 @@ button {
   
     100% {
       animation-timing-function: ease-out;
-      opacity: 1;
       transform: translateY(0px);
     }
   }
@@ -326,7 +321,7 @@ button {
     width: 100%;
     opacity: 0.9;
     cursor: wait;
-    animation: fadeaway 3s forwards;
+    animation: fadeaway 2s forwards;
  
 
     &__spinner {
@@ -354,6 +349,7 @@ button {
     to {
     transform: rotate(1turn);  
 }
+
 }
 
 @keyframes fadeaway {

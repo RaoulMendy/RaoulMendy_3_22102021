@@ -461,9 +461,6 @@ button {
     -webkit-transform: translateY(24px);
             transform: translateY(24px);
   }
-  20% {
-    opacity: 0;
-  }
   40% {
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
@@ -486,7 +483,6 @@ button {
   100% {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
-    opacity: 1;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
@@ -500,9 +496,6 @@ button {
     -webkit-transform: translateY(24px);
             transform: translateY(24px);
   }
-  20% {
-    opacity: 0;
-  }
   40% {
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
@@ -525,7 +518,6 @@ button {
   100% {
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
-    opacity: 1;
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
@@ -550,8 +542,8 @@ button {
   width: 100%;
   opacity: 0.9;
   cursor: wait;
-  -webkit-animation: fadeaway 3s forwards;
-          animation: fadeaway 3s forwards;
+  -webkit-animation: fadeaway 2s forwards;
+          animation: fadeaway 2s forwards;
 }
 
 .loader__spinner {
