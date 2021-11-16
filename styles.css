@@ -530,4 +530,77 @@ button {
             transform: translateY(0px);
   }
 }
+
+/***************************/
+.loader {
+  position: fixed;
+  z-index: 9999;
+  top: 0%;
+  left: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  cursor: wait;
+  -webkit-animation: fadeaway 3s forwards;
+          animation: fadeaway 3s forwards;
+}
+
+.loader__spinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader__spinner::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-top: 15px double #FF79DA;
+  border-bottom: 15px double #9356DC;
+  border-right: 15px double #99E2D0;
+  border-left: 15px double #9356DC;
+  border-radius: 50%;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes fadeaway {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeaway {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

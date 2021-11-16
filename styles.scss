@@ -312,3 +312,53 @@ button {
       transform: translateY(0px);
     }
   }
+
+/***************************/
+.loader {
+    position: fixed;
+    z-index: 9999;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    cursor: wait;
+    animation: fadeaway 3s forwards;
+ 
+
+    &__spinner {
+        display: flex;
+        justify-content: center;
+    
+        &::after {
+            content: '';
+            width: 50px;
+            height: 50px;
+            border-top: 15px double $color-secondary;
+            border-bottom: 15px double $color-primary;
+            border-right: 15px double $color-tertiary;
+            border-left: 15px double $color-primary;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;    
+        }
+    
+    }
+
+}
+
+
+@keyframes spin {
+    to {
+    transform: rotate(1turn);  
+}
+}
+
+@keyframes fadeaway {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
