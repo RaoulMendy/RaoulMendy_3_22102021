@@ -1,0 +1,19 @@
+{
+  "name": "raoulmendy_3_22102021",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaoulMendy/RaoulMendy_3_22102021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaoulMendy/RaoulMendy_3_22102021/issues"
+  },
+  "homepage": "https://github.com/RaoulMendy/RaoulMendy_3_22102021#readme"
+}
