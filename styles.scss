@@ -4,7 +4,7 @@
 @import "./base/base";
 
 .loader {
-background-color: "#f3f3f3"
+background-color: #f3f3f3
 }
 
 header {
@@ -185,7 +185,7 @@ button {
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr repeat(13);
+    grid-template-rows: 1fr;
     row-gap: 14px;
     margin-block-end: 40px;
     padding: 14px;
