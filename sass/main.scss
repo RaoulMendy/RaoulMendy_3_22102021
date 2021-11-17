@@ -201,15 +201,10 @@ button {
 /******************************************************/
 .menu {
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    row-gap: 14px;
-    margin-block-end: 40px;
-    padding: 14px;
-    border-radius: 40px 40px 0px 0px;
     position: relative;
     bottom: 40px;
+    padding: 14px;
+    border-radius: 40px 40px 0px 0px;
     background-color: $grey1;
     
 
@@ -226,6 +221,17 @@ button {
     }
 
 }
+
+.meal-container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 14px;
+    
+
+}
+
 .meal {
     display: flex;
     background-color: white;
@@ -284,8 +290,9 @@ button {
 }
 
 .order {
+    @include flex-center;
     text-align: center;
-    height: 150px;
+    height: 200px;
     
 }
 
@@ -361,7 +368,6 @@ button {
 
 }
 
-
 @keyframes spin {
     to {
     transform: rotate(1turn);  
@@ -373,5 +379,40 @@ button {
     100% {
         opacity: 0;
         visibility: hidden;
+    }
+}
+
+
+/********************************/
+
+@media screen and (min-width: 768px) {
+
+    .maintray {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 14px;
+    }
+
+    .container-step {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 14px;
+    }
+
+    .meal-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 14px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+
+    .maintray {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 14px;
     }
 }
