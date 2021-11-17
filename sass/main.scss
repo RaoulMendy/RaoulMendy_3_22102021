@@ -226,10 +226,8 @@ button {
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     row-gap: 14px;
-    
-
 }
 
 .meal {
@@ -404,6 +402,11 @@ button {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 14px;
+    }
+
+    .meal-container {
+
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
 }
 
