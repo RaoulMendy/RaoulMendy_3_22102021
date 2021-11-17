@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 @import "./utils/variables";
 @import "./utils/mixins";
-@import "./base/base";
+@import "./base/typography";
 
 .loader {
 background-color: #f3f3f3
@@ -77,6 +77,13 @@ header {
 button {
     @include box-shadow;
     @include button;
+  
+
+    &:hover {
+       background: $gradient-light;
+       box-shadow: 0px 10px 10px $grey2;
+    }
+
 }
 
 .card {
@@ -94,6 +101,7 @@ button {
     }
 
     &__sticker {
+        @include flex-center;
         position: absolute;
         right: 10px;
         top: 10px;
@@ -101,7 +109,7 @@ button {
         color: #139273;
         font-weight: bold;
         height: 30px;
-        width:80px;
+        width: 90px;
         padding: 8px;
     }
 
@@ -120,10 +128,21 @@ button {
     background-color: $grey1;
     border-radius: 15px 15px;
     margin-block: 20px;
+    transition: ease-in-out 400ms;
 
-    &>span {
+    &:hover {
+        background: $alpha-primary;
+        transition: ease-in-out 400ms;
+      
+    }
+
+    & span {
         margin-right: 15px;
         color: $grey3;
+      }
+      
+    .fas.fa-store {
+        color: $color-primary;
       }
 
     &__number {
@@ -136,9 +155,7 @@ button {
         color: $color-white;
         border-radius: 50%;
     }
-    &:hover {
-        background: $alpha-primary;
-    }
+
 }
 
 .heart {
@@ -214,7 +231,7 @@ button {
     background-color: white;
     border-radius: 15px 15px 15px 15px;
     height: 68px;
-    animation: anim1 1000ms ease-out 0s 1 normal forwards;
+    animation: collapse 1000ms ease-out 0s 1 normal forwards;
 
    
     &__heading {
@@ -279,7 +296,7 @@ button {
 }
 
 
-@keyframes anim1 {
+@keyframes collapse {
     0% {
       animation-timing-function: ease-in;
       opacity: 0;

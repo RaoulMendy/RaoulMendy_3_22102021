@@ -5,7 +5,7 @@
     list-style-type: none;
 }
 
-body {
+body , button {
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
 
@@ -16,7 +16,7 @@ body {
     position: relative;
   }
 
-  p {
+  p , h3,  button {
     font-size: 1.0em;
   }
 
@@ -36,10 +36,6 @@ body {
     font-size: 1.2em;
   }
 
-  h3 {
-    font-size: 1.0em;
-  
-  }
 
   h4 {
     @include font-title;

@@ -2,10 +2,13 @@ $color-primary:#9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-white: white;
-$alpha-primary: hsla(267, 66%, 60%, 0.2); 
+$alpha-primary: rgba(146, 86, 220, 0.2); 
 $alpha-secondary: hsla(317, 100%, 74%, 0.2);
 $alpha-tertiary: hsla(165, 56%, 74%, 0.2);
 $grey1: #f2f2f2;
 $grey2:#d2d2d2;
 $grey3: #353535;
-$gradient: linear-gradient(#FF79DA 10%, #9356DC 90%);
+$gradient: linear-gradient(rgba(255, 122, 217, 1) 10%, rgba(146, 86, 220, 1) 90%);
+$gradient-light: linear-gradient(rgba(255, 122, 217, 0.8) 10%, rgba(146, 86, 220, 0.8) 90%);
+
+

@@ -7,7 +7,7 @@
   list-style-type: none;
 }
 
-body {
+body, button {
   font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
   position: relative;
 }
@@ -17,7 +17,7 @@ body {
   position: relative;
 }
 
-p {
+p, h3, button {
   font-size: 1.0em;
 }
 
@@ -36,10 +36,6 @@ h2 {
 .menu h2 {
   text-transform: uppercase;
   font-size: 1.2em;
-}
-
-h3 {
-  font-size: 1.0em;
 }
 
 h4 {
@@ -177,10 +173,18 @@ button {
   height: 50px;
   width: 218px;
   border: none;
+  cursor: pointer;
   border-radius: 25px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #FF79DA), color-stop(90%, #9356DC));
-  background: linear-gradient(#FF79DA 10%, #9356DC 90%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ff7ad9), color-stop(90%, #9256dc));
+  background: linear-gradient(#ff7ad9 10%, #9256dc 90%);
   color: white;
+}
+
+button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(255, 122, 217, 0.8)), color-stop(90%, rgba(146, 86, 220, 0.8)));
+  background: linear-gradient(rgba(255, 122, 217, 0.8) 10%, rgba(146, 86, 220, 0.8) 90%);
+  -webkit-box-shadow: 0px 10px 10px #d2d2d2;
+          box-shadow: 0px 10px 10px #d2d2d2;
 }
 
 .card {
@@ -204,6 +208,15 @@ button {
 }
 
 .card__sticker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   right: 10px;
   top: 10px;
@@ -211,7 +224,7 @@ button {
   color: #139273;
   font-weight: bold;
   height: 30px;
-  width: 80px;
+  width: 90px;
   padding: 8px;
 }
 
@@ -242,11 +255,23 @@ button {
   background-color: #f2f2f2;
   border-radius: 15px 15px;
   margin-block: 20px;
+  -webkit-transition: ease-in-out 400ms;
+  transition: ease-in-out 400ms;
 }
 
-.step > span {
+.step:hover {
+  background: rgba(146, 86, 220, 0.2);
+  -webkit-transition: ease-in-out 400ms;
+  transition: ease-in-out 400ms;
+}
+
+.step span {
   margin-right: 15px;
   color: #353535;
+}
+
+.step .fas.fa-store {
+  color: #9356DC;
 }
 
 .step__number {
@@ -266,10 +291,6 @@ button {
   background-color: #9356DC;
   color: white;
   border-radius: 50%;
-}
-
-.step:hover {
-  background: rgba(146, 86, 220, 0.2);
 }
 
 .heart {
@@ -362,8 +383,8 @@ button {
   background-color: white;
   border-radius: 15px 15px 15px 15px;
   height: 68px;
-  -webkit-animation: anim1 1000ms ease-out 0s 1 normal forwards;
-          animation: anim1 1000ms ease-out 0s 1 normal forwards;
+  -webkit-animation: collapse 1000ms ease-out 0s 1 normal forwards;
+          animation: collapse 1000ms ease-out 0s 1 normal forwards;
 }
 
 .meal__heading {
@@ -453,7 +474,7 @@ button {
   background-color: #99E2D0;
 }
 
-@-webkit-keyframes anim1 {
+@-webkit-keyframes collapse {
   0% {
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
@@ -488,7 +509,7 @@ button {
   }
 }
 
-@keyframes anim1 {
+@keyframes collapse {
   0% {
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
