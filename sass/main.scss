@@ -76,11 +76,16 @@ header {
 button {
     @include box-shadow;
     @include button;
+    transition: ease-in-out 400ms;
+    
   
 
     &:hover {
-       background: $gradient-light;
-       box-shadow: 0px 10px 10px $grey2;
+
+       box-shadow: 0px 5px 5px $grey3;
+       filter: brightness(1.05);
+       transition: ease-in-out 400ms;
+    
     }
 
 }
@@ -285,6 +290,7 @@ button {
 
         &__price {
             @include flex-end;
+
         }
     }
 }
