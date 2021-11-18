@@ -237,61 +237,75 @@ button {
 
 .meal {
     display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
     height: 68px;
     animation: collapse 1000ms ease-out 0s 1 normal forwards;
 
-   
     &__heading {
-        display: grid;
-        grid-template-columns: 4fr 1fr 0px;
         overflow: hidden;
-        cursor: pointer;
-        width: 100%;
-        transition: all 400ms ease-in-out;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 14px;
+    }
+
+    &__price {
+        margin-left: auto;
+        @include flex-end;
+    }
+
+    &__checked {
+        @include flex-center;
+        background-color: $color-tertiary;
+        color: white;
+        border-radius: 0px 15px 15px 0px;
+        width: 68px;
+        margin-right: -68px;
+        transition: 600ms ease-in-out;
+    }
+
+    span.fas {
+        transform: rotate(0deg);
+        transition: transform 600ms ease-in-out;
+    }
+
+    &:hover {
+            
+        transition: all 600ms ease-in-out;
 
         span.fas {
-            transform: rotate(0deg);
-            transition: transform 400ms ease-in-out;
-        }
-        
-
-        &:hover {
-            grid-template-columns: 4fr 1fr 68px;
-            transition: all 400ms ease-in-out;
-
-            span.fas {
-                transform: rotate(-360deg);
-                transition: transform 400ms ease-in-out;
-            }
+            transform: rotate(-360deg);
+            transition: transform 600ms ease-in-out;
         }
 
-        &__checked {
-            @include flex-center;
-            background-color: $color-tertiary;
-            color: white;
-            border-radius: 0px 15px 15px 0px;
-        }
-
-        &__details {
-            padding: 14px;
-            overflow: hidden;
+        .meal__checked {
+            transition: 600ms ease-in-out;
+            margin-right: 0px;
             
-            p, h3 {
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-            }
-   
         }
 
-        &__price {
-            @include flex-end;
-
+        p , h3 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
-}
+
+    p , h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+
+   
+
+
+    }
+
 
 .order {
     @include flex-center;
@@ -300,7 +314,7 @@ button {
     
 }
 
-.mintbar {
+.line--mint {
     width: 50px;
     height: 5px;
     background-color: $color-tertiary;
@@ -407,7 +421,7 @@ button {
         column-gap: 14px;
     }
 
-    .meal-list {
+    .menu__grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 14px;

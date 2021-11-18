@@ -387,6 +387,9 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
   height: 68px;
@@ -395,43 +398,27 @@ button:hover {
 }
 
 .meal__heading {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 4fr 1fr 0px;
-      grid-template-columns: 4fr 1fr 0px;
   overflow: hidden;
-  cursor: pointer;
-  width: 100%;
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 14px;
 }
 
-.meal__heading span.fas {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  transition: -webkit-transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
+.meal__price {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 14px;
 }
 
-.meal__heading:hover {
-  -ms-grid-columns: 4fr 1fr 68px;
-      grid-template-columns: 4fr 1fr 68px;
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
-}
-
-.meal__heading:hover span.fas {
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  transition: -webkit-transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
-}
-
-.meal__heading__checked {
+.meal__checked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,30 +431,51 @@ button:hover {
   background-color: #99E2D0;
   color: white;
   border-radius: 0px 15px 15px 0px;
+  width: 68px;
+  margin-right: -68px;
+  -webkit-transition: 600ms ease-in-out;
+  transition: 600ms ease-in-out;
 }
 
-.meal__heading__details {
-  padding: 14px;
+.meal span.fas {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 600ms ease-in-out;
+  transition: -webkit-transform 600ms ease-in-out;
+  transition: transform 600ms ease-in-out;
+  transition: transform 600ms ease-in-out, -webkit-transform 600ms ease-in-out;
+}
+
+.meal:hover {
+  -webkit-transition: all 600ms ease-in-out;
+  transition: all 600ms ease-in-out;
+}
+
+.meal:hover span.fas {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: -webkit-transform 600ms ease-in-out;
+  transition: -webkit-transform 600ms ease-in-out;
+  transition: transform 600ms ease-in-out;
+  transition: transform 600ms ease-in-out, -webkit-transform 600ms ease-in-out;
+}
+
+.meal:hover .meal__checked {
+  -webkit-transition: 600ms ease-in-out;
+  transition: 600ms ease-in-out;
+  margin-right: 0px;
+}
+
+.meal:hover p, .meal:hover h3 {
   overflow: hidden;
-}
-
-.meal__heading__details p, .meal__heading__details h3 {
   text-overflow: ellipsis;
-  overflow: hidden;
   white-space: nowrap;
 }
 
-.meal__heading__price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 14px;
+.meal p, .meal h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .order {
@@ -484,7 +492,7 @@ button:hover {
   height: 200px;
 }
 
-.mintbar {
+.line--mint {
   width: 50px;
   height: 5px;
   background-color: #99E2D0;
@@ -657,7 +665,7 @@ button:hover {
     -webkit-column-gap: 14px;
             column-gap: 14px;
   }
-  .meal-list {
+  .menu__grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
