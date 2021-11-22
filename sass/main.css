@@ -458,6 +458,8 @@ footer ul {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 14px;
+  margin-top: 14px;
+  font-weight: bold;
 }
 
 .meal__checked {
@@ -474,9 +476,16 @@ footer ul {
   color: white;
   border-radius: 0px 15px 15px 0px;
   width: 68px;
+  min-width: 68px;
   margin-right: -68px;
   -webkit-transition: 600ms ease-in-out;
   transition: 600ms ease-in-out;
+}
+
+.meal p, .meal h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .meal span.fas {
@@ -506,18 +515,6 @@ footer ul {
   -webkit-transition: 600ms ease-in-out;
   transition: 600ms ease-in-out;
   margin-right: 0px;
-}
-
-.meal:hover p, .meal:hover h3 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.meal p, .meal h3 {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 .order {

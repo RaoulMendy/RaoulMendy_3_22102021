@@ -45,3 +45,9 @@
     align-items: center;
     margin-right: 14px;
 }
+
+@mixin overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
