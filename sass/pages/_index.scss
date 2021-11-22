@@ -1,0 +1,105 @@
+.city {
+    @include flex-center;
+    background-color: $grey2;
+    height: 50px;
+    
+    &__container {
+        @include flex-center;
+
+        span {
+            margin-right: 15px;
+        }  
+    }
+}
+
+.explore {
+    @include padding-layout;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 290px;
+    background-color: $grey1;
+}
+
+.step {
+    @include padding-layout;
+    display: flex;
+    height: 68px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $grey1;
+    border-radius: 15px 15px;
+    margin-block: 20px;
+    transition: ease-in-out 400ms;
+
+    &:hover {
+        background: $alpha-primary;
+        transition: ease-in-out 400ms;
+      
+    }
+
+    & span {
+        margin-right: 15px;
+        color: $grey3;
+      }
+      
+    .fas.fa-store {
+        color: $color-primary;
+      }
+
+    &__number {
+        position: relative;
+        @include flex-center;
+        right: 30px;
+        height: 25px;
+        width: 25px;
+        background-color: $color-primary;
+        color: $color-white;
+        border-radius: 50%;
+    }
+
+}
+
+.functioning {
+    @include padding-layout; 
+}
+
+.restaurants {
+    @include padding-layout;
+    background-color: $grey1;
+}
+
+.card {
+    position: relative;
+    display: grid;
+    grid-template-rows: 174px 77px;
+    height: 251px;
+    border-radius: 15px 15px;
+    margin-block: 20px;
+    background: $color-white;
+
+    &__img {
+        @include img-card;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    &__sticker {
+        @include flex-center;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: $color-tertiary;
+        color: #139273;
+        font-weight: bold;
+        height: 30px;
+        width: 90px;
+        padding: 8px;
+    }
+
+    &__heading {
+    @include padding-layout;
+    @include grid-heart;
+    }
+}

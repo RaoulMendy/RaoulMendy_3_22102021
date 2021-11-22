@@ -1,0 +1,117 @@
+.secondary-page {
+    background-color: $grey1;
+}
+
+.background {
+
+    height: 260px;
+
+    &__img {
+        @include img-card;
+    }
+}
+
+.menu {
+
+    position: relative;
+    bottom: 40px;
+    padding: 14px;
+    border-radius: 40px 40px 0px 0px;
+    background-color: $grey1;
+    
+
+    &__header {
+        display: grid;
+        grid-template-columns: 80% 20%;
+
+        &__title {
+            @include font-title;
+            font-size: 2.0em;
+
+        }
+       
+    }
+
+}
+
+.meal {
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    height: 68px;
+    animation: collapse 1000ms ease-out 0s 1 normal forwards;
+
+    &__heading {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 14px;
+    }
+
+    &__price {
+        margin-left: auto;
+        @include flex-end;
+    }
+
+    &__checked {
+        @include flex-center;
+        background-color: $color-tertiary;
+        color: white;
+        border-radius: 0px 15px 15px 0px;
+        width: 68px;
+        margin-right: -68px;
+        transition: 600ms ease-in-out;
+    }
+
+    span.fas {
+        transform: rotate(0deg);
+        transition: transform 600ms ease-in-out;
+    }
+
+    &:hover {
+            
+        transition: all 600ms ease-in-out;
+
+        span.fas {
+            transform: rotate(-360deg);
+            transition: transform 600ms ease-in-out;
+        }
+
+        .meal__checked {
+            transition: 600ms ease-in-out;
+            margin-right: 0px;
+            
+        }
+
+        p , h3 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    p , h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+
+    }
+
+
+.order {
+    @include flex-center;
+    text-align: center;
+    height: 200px;
+    
+}
+
+.line--mint {
+    width: 50px;
+    height: 5px;
+    background-color: $color-tertiary;
+}

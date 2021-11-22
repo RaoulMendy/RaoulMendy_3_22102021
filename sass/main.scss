@@ -2,324 +2,14 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/typography";
-
-
-
-header {
-    @include flex-center;
-    position: relative;
-    box-shadow: 0px 1px 4px $grey3;
-    background-color: $color-white;
-
-    a {
-        position: absolute;
-        left: 15px;
-        font-size: 1.2em
-        }
- }
-
- footer {
-    @include padding-layout;
-    background-color: $grey3;
-    color: $color-white;
-
-    span {
-        height: 15px;
-        width: 15px;
-        margin-right: 15px;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 120px
-
-    }
-}
-
-.city {
-    @include flex-center;
-    background-color: $grey2;
-    height: 50px;
-    
-    &__container {
-        @include flex-center;
-
-        span {
-            margin-right: 15px;
-        }  
-    }
-}
-
-.explore {
-    @include padding-layout;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    height: 290px;
-    background-color: $grey1;
-}
-
-.functioning {
-    @include padding-layout; 
-}
-
-.restaurants {
-    @include padding-layout;
-    background-color: $grey1;
-    
-}
-
-button {
-    @include box-shadow;
-    @include button;
-    transition: ease-in-out 400ms;
-    
-    &:hover {
-
-       box-shadow: 0px 5px 5px $grey3;
-       filter: brightness(1.05);
-       transition: ease-in-out 400ms;
-    
-    }
-
-}
-
-.blocpage {
-    background-color: $grey1;
-}
-
-.card {
-    position: relative;
-    display: grid;
-    grid-template-rows: 174px 77px;
-    height: 251px;
-    border-radius: 15px 15px;
-    margin-block: 20px;
-    background: $color-white;
-
-    &__img {
-        @include img-card;
-        border-radius: 10px 10px 0px 0px;
-    }
-
-    &__sticker {
-        @include flex-center;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        background-color: $color-tertiary;
-        color: #139273;
-        font-weight: bold;
-        height: 30px;
-        width: 90px;
-        padding: 8px;
-    }
-
-    &__heading {
-    @include padding-layout;
-    @include grid-heart;
-    }
-}
-
-.step {
-    @include padding-layout;
-    display: flex;
-    height: 68px;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: $grey1;
-    border-radius: 15px 15px;
-    margin-block: 20px;
-    transition: ease-in-out 400ms;
-
-    &:hover {
-        background: $alpha-primary;
-        transition: ease-in-out 400ms;
-      
-    }
-
-    & span {
-        margin-right: 15px;
-        color: $grey3;
-      }
-      
-    .fas.fa-store {
-        color: $color-primary;
-      }
-
-    &__number {
-        position: relative;
-        @include flex-center;
-        right: 30px;
-        height: 25px;
-        width: 25px;
-        background-color: $color-primary;
-        color: $color-white;
-        border-radius: 50%;
-    }
-
-}
-
-.heart {
-    @include flex-end;
-    
-    
-    &__one {
-       position: absolute;
-       transition: ease-in-out 400ms;
-       cursor: pointer;
-
-       &:hover {
-        opacity: 0;
-        transition: ease-in-out 400ms;
-        }
-    }
-
-    &__two {
-        cursor: pointer;
-        position: absolute;
-        opacity: 0;
-        transition: ease-in-out 400ms;
-  
-        &:hover {
-            opacity: 1;
-            transition: ease-in-out 400ms;
-        }
-    }
-}
-
-/**********************************PAGE************************/
-
-.background {
-
-    height: 260px;
-
-    &__img {
-        @include img-card;
-    }
-}
-
-/******************************************************/
-.menu {
-
-    position: relative;
-    bottom: 40px;
-    padding: 14px;
-    border-radius: 40px 40px 0px 0px;
-    background-color: $grey1;
-    
-
-    &__header {
-        display: grid;
-        grid-template-columns: 80% 20%;
-
-        &__title {
-            @include font-title;
-            font-size: 2.0em;
-
-        }
-       
-    }
-
-}
-
-.meal-container {
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    row-gap: 14px;
-}
-
-.meal {
-    display: flex;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    background-color: white;
-    border-radius: 15px 15px 15px 15px;
-    height: 68px;
-    animation: collapse 1000ms ease-out 0s 1 normal forwards;
-
-    &__heading {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        padding: 14px;
-    }
-
-    &__price {
-        margin-left: auto;
-        @include flex-end;
-    }
-
-    &__checked {
-        @include flex-center;
-        background-color: $color-tertiary;
-        color: white;
-        border-radius: 0px 15px 15px 0px;
-        width: 68px;
-        margin-right: -68px;
-        transition: 600ms ease-in-out;
-    }
-
-    span.fas {
-        transform: rotate(0deg);
-        transition: transform 600ms ease-in-out;
-    }
-
-    &:hover {
-            
-        transition: all 600ms ease-in-out;
-
-        span.fas {
-            transform: rotate(-360deg);
-            transition: transform 600ms ease-in-out;
-        }
-
-        .meal__checked {
-            transition: 600ms ease-in-out;
-            margin-right: 0px;
-            
-        }
-
-        p , h3 {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-    }
-
-    p , h3 {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-
-   
-
-
-    }
-
-
-.order {
-    @include flex-center;
-    text-align: center;
-    height: 200px;
-    
-}
-
-.line--mint {
-    width: 50px;
-    height: 5px;
-    background-color: $color-tertiary;
-}
-
+@import "./components/buttons";
+@import "./components/heart";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./layouts/loader";
+@import "./layouts/container";
+@import "./pages/index";
+@import "./pages/secondary";
 
 @keyframes collapse {
     0% {
@@ -348,64 +38,19 @@ button {
       animation-timing-function: ease-out;
       transform: translateY(0px);
     }
-  }
-
-/***************************/
-.loader {
-    position: fixed;
-    z-index: 9999;
-    top: 0%;
-    left: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    opacity: 0.9;
-    cursor: wait;
-    animation: fadeaway 2s forwards;
- 
-
-    &__spinner {
-        display: flex;
-        justify-content: center;
-    
-        &::after {
-            content: '';
-            width: 50px;
-            height: 50px;
-            border-top: 15px double $color-secondary;
-            border-bottom: 15px double $color-primary;
-            border-right: 15px double $color-tertiary;
-            border-left: 15px double $color-primary;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;    
-        }
-    
-    }
-
 }
-
 @keyframes spin {
     to {
     transform: rotate(1turn);  
 }
 
 }
-
 @keyframes fadeaway {
     100% {
         opacity: 0;
         visibility: hidden;
     }
 }
-
-.secondary-page {
-    background-color: $grey1;
-}
-
-/********************************/
-
 @media screen and (min-width: 800px) {
 
     .maintray {
@@ -432,7 +77,6 @@ button {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
 }
-
 @media screen and (min-width: 1105px) {
 
     .maintray {

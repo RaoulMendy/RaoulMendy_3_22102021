@@ -1,0 +1,19 @@
+footer {
+    @include padding-layout;
+    background-color: $grey3;
+    color: $color-white;
+
+    span {
+        height: 15px;
+        width: 15px;
+        margin-right: 15px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 120px
+
+    }
+}

@@ -1,0 +1,14 @@
+button {
+    @include box-shadow;
+    @include button;
+    transition: ease-in-out 400ms;
+    
+    &:hover {
+
+       box-shadow: 0px 5px 5px $grey3;
+       filter: brightness(1.05);
+       transition: ease-in-out 400ms;
+    
+    }
+
+}

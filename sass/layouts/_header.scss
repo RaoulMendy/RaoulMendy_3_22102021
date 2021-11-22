@@ -1,0 +1,12 @@
+header {
+    @include flex-center;
+    position: relative;
+    box-shadow: 0px 1px 4px $grey3;
+    background-color: $color-white;
+
+    a {
+        position: absolute;
+        left: 15px;
+        font-size: 1.2em
+        }
+ }

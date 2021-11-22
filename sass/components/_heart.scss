@@ -1,0 +1,26 @@
+.heart {
+    @include flex-end;
+    
+    &__one {
+       position: absolute;
+       transition: ease-in-out 400ms;
+       cursor: pointer;
+
+       &:hover {
+        opacity: 0;
+        transition: ease-in-out 400ms;
+        }
+    }
+
+    &__two {
+        cursor: pointer;
+        position: absolute;
+        opacity: 0;
+        transition: ease-in-out 400ms;
+  
+        &:hover {
+            opacity: 1;
+            transition: ease-in-out 400ms;
+        }
+    }
+}
