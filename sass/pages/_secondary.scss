@@ -19,8 +19,7 @@
     background-color: $grey1;
     
     &__header {
-        display: grid;
-        grid-template-columns: 80% 20%;
+        @include grid-heart;
 
         &__title {
             @include font-title;

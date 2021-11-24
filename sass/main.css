@@ -166,10 +166,6 @@ footer ul {
 }
 
 .loader {
-  position: fixed;
-  z-index: 9999;
-  top: 0%;
-  left: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,6 +175,11 @@ footer ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0%;
+  left: 0%;
+  background-color: white;
   height: 100%;
   width: 100%;
   opacity: 0.9;
